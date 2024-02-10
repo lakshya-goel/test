@@ -1,0 +1,98 @@
+/* Base styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* Product area */
+.product-area {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Add some space between product sections */
+}
+
+.product-left {
+    flex: 1;
+    /* Carousel styles (not provided in prompt, implement based on design) */
+}
+
+.product-right {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px; /* Add some padding for better separation */
+}
+
+/* Product info */
+.product-info {
+    margin-bottom: 20px; /* Add some space below product info */
+}
+
+.quantity,
+.price {
+    margin-bottom: 10px; /* Add some space between quantity and price */
+}
+
+.quantity select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.price p {
+    font-weight: bold;
+}
+
+/* Product details */
+.product-details {
+    border-top: 1px solid #eee;
+    padding-top: 20px; /* Add some padding for details */
+}
+
+.accordion {
+    /* Implement accordion styles based on desired behavior (e.g., toggle, slide animation) */
+}
+
+.accordion-item {
+    margin-bottom: 10px; /* Add some space between accordion items */
+}
+
+.accordion-title {
+    cursor: pointer; /* Indicate clickable accordion titles */
+}
+
+.accordion-content {
+    display: none; /* Initially hide accordion content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-area {
+        flex-direction: column; /* Stack product sections on small screens */
+    }
+
+    .product-right {
+        flex: 1; /* Take full width on small screens */
+    }
+}
